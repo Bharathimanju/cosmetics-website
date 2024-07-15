@@ -88,10 +88,11 @@ center{
 }
 .container{
     display: flex;
+     flex-wrap: wrap; 
     justify-content: center;
     background-color: aquamarine;
-    margin-top: 40px;
-    position: relative;
+    margin-top: 20px;
+    position: relative; 
 }
 .box1{
     text-align: center;
@@ -104,6 +105,7 @@ center{
     border-radius: 5px;
     margin-right: 5px;
     margin-left: 5px;
+    
     
 }
 .img1{
@@ -123,9 +125,12 @@ p,h3,h5{
     color:black;
     font-size: medium;
 }
- .container.one{
-    justify-content: center;
-}
+  .one{
+    justify-content: center;  
+    display: flex;
+    text-align: center;
+       
+} 
 .flex-container{
     display: flex;
     justify-content: center;
@@ -160,11 +165,13 @@ p,h3,h5{
     justify-content: center;
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
 
 }
 .fast .f1{
     text-align: center;
     display: flex;
+    justify-content: center;
 }
 .box3{
     text-align: center;
@@ -200,8 +207,8 @@ h4{
     justify-content: center;
     margin-top: 16px;
     background-color: rgb(167, 164, 164);
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
     
 
 }
@@ -264,18 +271,22 @@ footer{
     text-align: center;
     background-color: antiquewhite;
     margin-top: 14px;
+    /* display: flex;
+    flex-wrap: wrap; */
     
 }
 .copy{
     color:brown;
     text-align: center;
     padding-top: 3px;
+    
 }
 .but{
     padding: 5px;
     background-color: red;
     color:black;
     margin:6px;
+    
 }
 .but:hover{
     background-color: yellow;
@@ -285,6 +296,7 @@ footer{
 .hi{
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     
 }
 .hi .aimg{
@@ -292,6 +304,8 @@ footer{
     padding: 5px;
     width: 250px;
     height:250px;
+    
+    
 }
 #a1 p{
     margin:4px;
@@ -305,6 +319,7 @@ footer{
     background-color:whitesmoke;
     
     margin-top: 35px;
+    flex-wrap: wrap;
 
     
     
@@ -339,6 +354,131 @@ h5{
 #bt:hover{
     background-color: rgb(139, 139, 218);
 }
+.transfer{
+    justify-content: space-evenly;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.web{
+    /* margin: 30px; */
+   
+    width: 250px;
+    text-align: center;
+
+}
+strong{
+    color:rgb(147, 53, 53);
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: rgb(225, 225, 209);
+    font-size: 14x;
+    /* width: 400px; */
+    position: relative;
+    /* margin-left: 33%; */
+    /* flex-wrap: wrap; */
+    
+    
+    justify-content: center;
+    display: flex;
+}
+
+.pro{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    
+}
+.pro2{
+    width: 300px; 
+    text-align: center;
+    gap: 20PX;
+    
+}
+
+/* animation 2 */
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.carousel-image {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image img {
+    width: 100%; 
+    border-radius: 10px;
+} 
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+
+/* product */
+.center1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.ce1{
+    width: 200px;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+}
+#img1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+#skin{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color:rgb(134, 236, 134);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+
+
 
 
 
@@ -348,6 +488,39 @@ h5{
 
 
 /* ------------- */
+/* apply media query */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link li {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .nav-link a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+
+/*  media query for animation */
+ /* @media (max-width: 480px) {
+    .animation {
+        width: 1300px;
+    }
+}  */
 
 
 
