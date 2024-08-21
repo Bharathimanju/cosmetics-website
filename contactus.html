@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <style>
+        .q1 {
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .e1 {
+            width: 300px;
+            margin: 10px;
+            border: 1px solid rgb(197, 108, 123);
+            padding:10px;
+            backdrop-filter: blur(7px);
+            
+        }
+        
+        /* @media (max-width: 768px) {
+            .e1 {
+                width: 45%; 
+            }
+        /* } */
+        
+       
+         
+        .navbar{
+            justify-content: space-around;
+            display: flex;
+            /* backdrop-filter: blur(30px); */
+            /* background: transparent;      */
+            backdrop-filter: blur(10px);
+        }
+        .navbar ul li  {
+            display: inline-block;
+            margin-right: 25px;
+            font-size: 20px;
+            list-style: none;
+        }
+        .navbar a{
+             text-decoration: none;
+        }
+        body{
+            background-image: url(./images/contactus.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+        }
+        @media (max-width: 480px){
+                body{
+                    height: 180vh;
+                }
+            }
+        .one{
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            text-decoration: underline;
+            text-underline-offset: 7px;
+            
+        }
+        .two{
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            font-size: larger;
+
+            
+        }
+        h3{
+            
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+        input{
+            padding: 10px;
+        }
+        button{
+            background-color: rgb(107, 175, 202);
+            padding: 7px;
+            width: 70px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: beige;
+        }
+        textarea{
+            padding:10px
+        }
+        
+            
+
+            
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Sugar</h1>
+        </div>
+        <ul class="navlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="one" >
+        <h1>Contact <cite style="color:rgb(124, 14, 67)">Us</cite></h1>
+        
+    </div>
+    <div class="two">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non hic excepturi aperiam a aspernatur nisi enim optio.</p>
+    </div>
+    <div class="q1">
+        <div class="e1">
+            <h2>Send Message</h2>
+            <form action="">
+                <input type="text" placeholder="Enter your name"><br><br>
+                <input type="Email" placeholder="Email"><br><br>
+                <textarea name="" id="" cols="22px"  placeholder="Type your Message...."></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+            
+            
+            
+        </div>
+        <div>
+            <h3>Get touch with us</h3>
+            <div class="three" >
+                <i class='bx bx-phone' style="font-size: 30px;"> +91 976 567 3434  </i><br><br>
+                <i class='bx bx-envelope' style="font-size: 30px;"> sugargmail.com</i><br><br>
+                <i class='bx bxl-twitter' style="font-size: 30px;"> sugar.twitter</i>
+            </div>
+        
+            
+        
+        </div>
+        
+        
+    </div>
+</body>
+</html>

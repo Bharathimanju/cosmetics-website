@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            justify-content: space-around;
+            display: flex;
+            /* backdrop-filter: blur(30px); */
+            /* background: transparent;      */
+            backdrop-filter: blur(10px);
+        }
+        .navbar ul li  {
+            display: inline;
+            margin-right: 25px;
+            font-size: 20px;
+            list-style: none;
+        }
+        .navbar a{
+             text-decoration: none;
+        }
+        body {
+            background-image: url(./images/aboutus2.jpg);
+             background-size: cover; 
+            background-repeat: no-repeat; 
+            position: relative;
+            height: 100vh;
+    
+            }
+            @media (max-width: 480px){
+                body{
+                    height: 220vh;
+                }
+
+            }
+                
+            
+            .one{
+                justify-content: center;
+                display: flex;
+                color: rgb(5, 54, 5);
+                text-decoration-color: white;
+                text-decoration: underline;
+            }
+            button{
+            
+                border-radius: 4px;
+                padding: 5px;
+                background-color: rgb(130, 71, 23);
+                color:white;
+                font-size: 18px;
+                transition: transform 3s ease;
+            }
+            
+            
+            button:hover{
+                box-shadow: 0 0 5px cyan,0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan;
+                background-color: cyan;
+                color:black;
+                transform: scale(1.1);
+            }
+            .box1{
+                justify-content:center;
+                display:flex;
+                flex-wrap:wrap;
+                
+                gap: 14px; 
+            
+                
+            }
+            .box2{
+                width: 550px;
+                padding: 10px;   
+             
+            }
+            .box2,strong{
+                text-indent: 20px;
+            }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Sugar</h1>
+        </div>
+        <ul class="navlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="h1">
+        <h2 class="one">ABOUT US</h2>
+    </div>
+    <div class="box1">
+        <div class="box2">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta odio veritatis, 
+                voluptate laborum distinctio doloremque officia perferendis voluptates, cumque sit nisi. 
+                Blanditiis, in. Consequuntur nesciunt reiciendis,fugit iure possimus ipsam vero repellendus 
+                quaerat! Eaque porro exercitationem aliquid.
+            </strong><br><br>
+            <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores consequuntur 
+                hic doloribus debitis iusto tenetur nesciunt? Nesciunt, harum? Nostrum.
+            </strong><br><br>
+            <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, esse. Asperiores, omnis 
+                saepe optio odit odio quam laudantium doloremque velit. Optio facilis quibusdam cumque officiis 
+                nihil molestias. Deleniti velit dolore quo pariatur modi. Magnam ab deleniti, quibusdam eaque, 
+                esse molestias nulla excepturi, velit perferendis nihil quasi accusantium aliquid optio! Facere?
+            </strong>
+            <br><br>
+            <button>Read More</button>
+
+        </div>
+</body>
+</html>
